@@ -15,7 +15,7 @@ const BannerHome = () => {
         out their honest stories, positively shifting life patterns of their clients.
       </h2>
       <div className="BannerHome__img">
-        <img src={MainImg} alt="main" />
+        <img src={MainImg} alt="main" width="1600" height="773" />
       </div>
     </Section>
   );
