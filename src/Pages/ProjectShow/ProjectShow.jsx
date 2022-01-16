@@ -1,8 +1,8 @@
 import "./ProjectShow.scss";
 import ProjectShowImg from "../../Images/projectShow.png";
 import Container from "../../Layout/Container/Container";
-import project2Img from "../../Images/project2.png";
-import project1Img from "../../Images/project1.png";
+import project2Img from "../../Images/project2.webp";
+import project1Img from "../../Images/project1.webp";
 import { useEffect } from "react";
 import Section from "../../Layout/Section/Section";
 
