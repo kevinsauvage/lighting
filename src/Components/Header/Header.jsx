@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import Container from "../../Layout/Container/Container";
 import "./Header.scss";
+import Logo from "../../Images/logo.png";
 
 const Header = () => {
   return (
     <div className="Header">
       <Container className="Header__container">
         <div className="Header__logo">
+          <img src={Logo} alt="logo" />
           <Link to="/">LIGHTING</Link>
         </div>
         <nav className="Header__nav">

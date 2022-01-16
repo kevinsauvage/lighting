@@ -13,6 +13,13 @@
   }
   &__logo {
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+
+    img {
+      margin-right: 5px;
+    }
   }
 
   &__nav {
