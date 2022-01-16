@@ -33,6 +33,19 @@
     padding-left: 0px;
   }
 }
+@mixin bigTitle {
+  font-size: 120px;
+  font-weight: 400;
+  @include respond(tablet) {
+    font-size: 80px;
+  }
+  @include respond(tabletS) {
+    font-size: 60px;
+  }
+  @include respond(mobile) {
+    font-size: 46px;
+  }
+}
 
 $smallMobile: 375px;
 $mobile: 600px;

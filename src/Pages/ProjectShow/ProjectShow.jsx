@@ -14,19 +14,21 @@ const ProjectShow = () => {
   return (
     <div className="ProjectShow">
       <Section className="ProjectShow__details">
-        <h1 className="ProjectShow__title">Gavvity</h1>
-        <p className="ProjectShow__type">
-          Branding, Typography, UX Wire-framing, UI Designs, <span>2020</span>
-        </p>
-        <p className="ProjectShow__subtitle">
-          Gravvity is a chat app where you can combine and filter your social feeds, designed to empower
-        </p>
-        <p className="ProjectShow__description">
-          Social media has been designed to manipulate people for their data and attention which is causing
-          harm to people’s health, privacy, productivity, and relationships. Our mission with Gravvity was to
-          fix social media, by giving 3.8 billion users the ability to enjoy the benefits of being connected
-          without being exploited
-        </p>
+        <Container>
+          <h1 className="ProjectShow__title">Gavvity</h1>
+          <p className="ProjectShow__type">
+            Branding, Typography, UX Wire-framing, UI Designs, <span>2020</span>
+          </p>
+          <p className="ProjectShow__subtitle">
+            Gravvity is a chat app where you can combine and filter your social feeds, designed to empower
+          </p>
+          <p className="ProjectShow__description">
+            Social media has been designed to manipulate people for their data and attention which is causing
+            harm to people’s health, privacy, productivity, and relationships. Our mission with Gravvity was
+            to fix social media, by giving 3.8 billion users the ability to enjoy the benefits of being
+            connected without being exploited
+          </p>
+        </Container>
       </Section>
       <img src={ProjectShowImg} alt="working process" className="ProjectShow__bannerImg" />
       <Container className="ProjectShow__imgs">

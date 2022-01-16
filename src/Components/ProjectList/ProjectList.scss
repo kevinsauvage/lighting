@@ -3,17 +3,19 @@
 .ProjectList {
   h1 {
     @include paddingLeftSmall;
+    @include respond(mobile) {
+      padding-left: 80px;
+    }
   }
   &__banner {
     @include paddingLeftSmall;
+    @include respond(mobile) {
+      margin-bottom: 100px;
+    }
   }
 
   &__title {
-    font-size: 120px;
-    font-weight: 400;
-    @include respond(mobile) {
-      font-size: 46px;
-    }
+    @include bigTitle;
   }
 
   &__titleWrapper {
@@ -30,6 +32,7 @@
       font-size: 20px;
       position: relative;
       top: 22px;
+      max-width: 200px;
     }
   }
 }

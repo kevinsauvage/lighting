@@ -4,6 +4,9 @@
 .About {
   &__container {
     @include paddingLeftBig;
+    @include respond(mobile) {
+      padding-left: 10px;
+    }
   }
 
   &__banner {
@@ -17,16 +20,15 @@
   }
 
   &__title {
-    font-size: 120px;
     font-weight: 400;
     line-height: 110px;
     margin-top: 80px;
     margin-bottom: 40px;
     white-space: pre-line;
     width: min-content;
+    @include bigTitle;
 
     @include respond(mobile) {
-      font-size: 65px;
       line-height: unset;
     }
   }
@@ -126,6 +128,14 @@
 
   &__textBig {
     font-size: 60px;
+
+    @include respond(tablet) {
+      font-size: 50px;
+    }
+
+    @include respond(tabletS) {
+      font-size: 40px;
+    }
 
     @include respond(mobile) {
       font-size: 30px;
