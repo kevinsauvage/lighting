@@ -36,6 +36,7 @@
   &__img {
     margin-top: 60px;
     position: relative;
+
     &::after {
       content: "";
       width: 100%;
@@ -51,6 +52,7 @@
     img {
       width: 100%;
       height: auto;
+      display: block;
     }
     @include respond(mobile) {
       margin-top: 10px;
