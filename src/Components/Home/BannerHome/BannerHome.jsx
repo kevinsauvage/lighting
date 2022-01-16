@@ -1,5 +1,5 @@
 import "./BannerHome.scss";
-import MainImg from "../../../Images/main_pic.svg";
+import MainImg from "../../../Images/main_pic.png";
 import Section from "../../../Layout/Section/Section";
 
 const BannerHome = () => {
