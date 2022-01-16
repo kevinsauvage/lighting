@@ -1,0 +1,35 @@
+@import "../../Styles/mixins";
+
+.ProjectList {
+  h1 {
+    @include paddingLeftSmall;
+  }
+  &__banner {
+    @include paddingLeftSmall;
+  }
+
+  &__title {
+    font-size: 120px;
+    font-weight: 400;
+    @include respond(mobile) {
+      font-size: 46px;
+    }
+  }
+
+  &__titleWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__subtitle {
+    max-width: 300px;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 1rem;
+    @include respond(mobile) {
+      font-size: 20px;
+      position: relative;
+      top: 22px;
+    }
+  }
+}

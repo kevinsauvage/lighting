@@ -1,0 +1,152 @@
+@import "../../Styles/variable";
+@import "../../Styles/mixins";
+
+.About {
+  &__container {
+    @include paddingLeftBig;
+  }
+
+  &__banner {
+    display: flex;
+    align-items: flex-end;
+
+    @include respond(mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 110px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    white-space: pre-line;
+    width: min-content;
+
+    @include respond(mobile) {
+      font-size: 65px;
+      line-height: unset;
+    }
+  }
+
+  &__subtitle {
+    max-width: 160px;
+    margin-left: 1rem;
+    margin-bottom: 3.5rem;
+  }
+
+  &__desc {
+    max-width: 360px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 100px;
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+
+    @include respond(mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__textSmall {
+    font-size: 20px;
+    font-weight: 400;
+
+    span {
+      padding: 0 20px;
+      border-radius: 8px;
+      background-color: $yellow_main;
+      color: $black_main;
+      margin-right: 6px;
+    }
+  }
+
+  &__team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 100px;
+
+    @include respond(mobile) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      mix-blend-mode: lighten;
+      position: relative;
+
+      &:nth-child(2) {
+        top: 60px;
+        right: 60px;
+
+        @include respond(mobile) {
+          top: 0;
+          right: 20px;
+        }
+      }
+
+      &:nth-child(3) {
+        right: 100px;
+        top: 60px;
+
+        @include respond(mobile) {
+          right: -30px;
+          top: unset;
+        }
+      }
+
+      &:nth-child(4) {
+        right: 150px;
+        top: 120px;
+
+        @include respond(mobile) {
+          position: static;
+          top: unset;
+        }
+      }
+    }
+  }
+
+  &__slice {
+    background-color: $yellow_main;
+    color: $black_main;
+  }
+
+  &__textBig {
+    font-size: 60px;
+
+    @include respond(mobile) {
+      font-size: 30px;
+    }
+
+    span {
+      background-color: $black_main;
+      color: $yellow_main;
+      padding: 4px 40px;
+      border-radius: 40px;
+      font-size: 27px;
+      min-height: 50px;
+      margin-right: 10px;
+      position: relative;
+      bottom: 8px;
+
+      @include respond(mobile) {
+        padding: 2px 30px;
+        font-size: 20px;
+        bottom: 5px;
+      }
+    }
+  }
+}

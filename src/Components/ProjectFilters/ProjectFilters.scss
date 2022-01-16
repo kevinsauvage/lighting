@@ -1,0 +1,29 @@
+@import "../../Styles/variable";
+@import "../../Styles/mixins";
+
+.ProjectFilters {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  max-width: 800px;
+  @include paddingLeftSmall;
+
+  @include respond(mobile) {
+    margin-top: 100px;
+  }
+  &__item {
+    @include btn;
+    padding: 10px 20px;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 4px;
+    @include respond(mobile) {
+      font-size: 20px;
+    }
+    &--active {
+      background-color: $yellow_main;
+      color: $black_main;
+    }
+  }
+}

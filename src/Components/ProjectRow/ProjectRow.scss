@@ -1,0 +1,34 @@
+@import "../../Styles/mixins";
+
+.ProjectRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(mobile) {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+
+    &::first-line {
+      line-height: 90px;
+    }
+
+    @include respond(mobile) {
+      font-size: 30px;
+      &::first-line {
+        line-height: 30px;
+      }
+    }
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

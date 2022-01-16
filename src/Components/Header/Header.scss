@@ -1,0 +1,33 @@
+@import "../../Styles/variable";
+@import "../../Styles/mixins";
+
+.Header {
+  height: 33px;
+  width: 100%;
+  margin-top: 20px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    font-size: 18px;
+  }
+
+  &__nav {
+    &-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    &-item {
+      @include btn;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

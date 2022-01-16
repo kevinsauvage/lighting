@@ -1,0 +1,93 @@
+@import "../../Styles/mixins";
+@import "../../Styles/variable";
+
+.Contact {
+  &__container {
+    @include paddingLeftBig;
+  }
+
+  &__title {
+    font-size: 80px;
+    max-width: 400px;
+    font-weight: 400;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    @include respond(mobile) {
+      font-size: 34px;
+      max-width: 200px;
+      margin-bottom: 100px;
+    }
+  }
+
+  &__email {
+    font-size: 30px;
+    text-decoration: underline;
+
+    @include respond(mobile) {
+      font-size: 26px;
+    }
+  }
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include respond(mobile) {
+      grid-template-columns: 1fr;
+    }
+
+    &-item {
+      font-size: 20px;
+      text-decoration: underline;
+    }
+
+    &-location {
+      max-width: 160px;
+
+      @include respond(mobile) {
+        margin-top: 40px;
+      }
+    }
+
+    &-title {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include respond(mobile) {
+        flex-direction: column;
+      }
+    }
+
+    form {
+      width: 60%;
+      margin-right: 40px;
+
+      @include respond(mobile) {
+        width: 80%;
+      }
+    }
+
+    &-btn {
+      @include btn;
+      background: transparent;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+
+      @include respond(mobile) {
+        margin-top: 80px;
+      }
+    }
+  }
+}

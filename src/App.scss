@@ -1,0 +1,35 @@
+@import "./Styles/variable";
+@import "./Styles/font-face";
+@import "./Styles/mixins";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  background-color: $black_main;
+  padding: 20px 0;
+  font-family: "HelveticaNeueCyr", serif;
+  font-weight: 400;
+  color: $yellow_main;
+
+  &__copyright {
+    margin-top: 200px;
+    @include paddingLeftBig;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: $yellow_main;
+  text-decoration: none;
+  font-family: "HelveticaNeueCyr", serif;
+}
+button {
+  font-family: "HelveticaNeueCyr", serif;
+}

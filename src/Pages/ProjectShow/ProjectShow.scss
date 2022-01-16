@@ -1,0 +1,86 @@
+@import "../../Styles/variable";
+@import "../../Styles/mixins";
+
+.ProjectShow {
+  min-height: 100vh;
+
+  &__bannerImg {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    font-size: 80px;
+    margin-bottom: 130px;
+    font-weight: 400;
+
+    @include respond(mobile) {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__details {
+    max-width: 700px;
+    margin-left: 300px;
+    position: relative;
+
+    @include respond(mobile) {
+      margin-left: 0;
+    }
+  }
+
+  &__type {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 200px;
+    text-align: end;
+
+    @include respond(mobile) {
+      position: static;
+      text-align: start;
+      margin-bottom: 100px;
+
+      span {
+        position: relative;
+        top: 20px;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 60px;
+
+    @include respond(mobile) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  &__imgs {
+    background-color: $yellow_main;
+    display: grid;
+    gap: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include respond(mobile) {
+      gap: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

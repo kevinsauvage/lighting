@@ -1,0 +1,60 @@
+@mixin btn {
+  color: $yellow_main;
+  padding: 3px 6px;
+  border-radius: 30px;
+  border: 1px solid $yellow_main;
+  font-size: 12px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+@mixin paddingLeftBig {
+  padding-left: 400px;
+  @include respond(tablet) {
+    padding-left: 200px;
+  }
+  @include respond(tabletS) {
+    padding-left: 120px;
+  }
+  @include respond(mobile) {
+    padding-left: 80px;
+  }
+}
+
+@mixin paddingLeftSmall {
+  padding-left: 220px;
+  @include respond(tablet) {
+    padding-left: 150px;
+  }
+  @include respond(tabletS) {
+    padding-left: 80px;
+  }
+  @include respond(mobile) {
+    padding-left: 0px;
+  }
+}
+
+$smallMobile: 375px;
+$mobile: 600px;
+$tabletS: 820px;
+$tablet: 1200px;
+
+@mixin respond($media) {
+  @if $media==smallmobile {
+    @media (max-width: $smallMobile) {
+      @content;
+    }
+  } @else if $media==mobile {
+    @media (max-width: $mobile) {
+      @content;
+    }
+  } @else if $media==tabletS {
+    @media (max-width: $tabletS) {
+      @content;
+    }
+  } @else if $media==tablet {
+    @media (max-width: $tablet) {
+      @content;
+    }
+  }
+}
