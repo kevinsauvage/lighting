@@ -3,14 +3,13 @@
 
 .ProjectHome {
   &__btn {
-    margin-left: 220px;
+    @include paddingLeftSmall;
     margin-top: 50px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 
     @include respond(mobile) {
-      margin-left: 0;
       width: 100%;
     }
 
