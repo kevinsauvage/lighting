@@ -1,11 +1,12 @@
+import "./About.scss";
 import Footer from "../../Components/Footer/Footer";
 import Container from "../../Layout/Container/Container";
-import "./About.scss";
-import Persona1 from "../../Images/Persona1.png";
-import Persona2 from "../../Images/Persona2.png";
-import Persona3 from "../../Images/Persona3.png";
-import Persona4 from "../../Images/Persona4.png";
+import Persona1 from "../../Images/Persona1.webp";
+import Persona2 from "../../Images/Persona2.webp";
+import Persona3 from "../../Images/Persona3.webp";
+import Persona4 from "../../Images/Persona4.webp";
 import Section from "../../Layout/Section/Section";
+
 const About = () => {
   return (
     <div className="About">
@@ -30,10 +31,10 @@ const About = () => {
           </p>
         </div>
         <Section className="About__team">
-          <img src={Persona1} alt="team worker" />
-          <img src={Persona2} alt="team worker" />
-          <img src={Persona3} alt="team worker" />
-          <img src={Persona4} alt="team worker" />
+          <img src={Persona1} alt="team worker" width="150" height="209" />
+          <img src={Persona2} alt="team worker" width="150" height="209" />
+          <img src={Persona3} alt="team worker" width="150" height="209" />
+          <img src={Persona4} alt="team worker" width="150" height="209" />
         </Section>
       </Container>
       <Section className="About__slice">
