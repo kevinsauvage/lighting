@@ -1,9 +1,9 @@
-import Grid1 from "../../Images/grid1.png";
-import Grid2 from "../../Images/grid2.jpg";
-import Grid3 from "../../Images/grid3.png";
-import Grid4 from "../../Images/grid4.jpg";
-import Grid5 from "../../Images/grid5.jpg";
-import Grid6 from "../../Images/grid6.jpg";
+import Grid1 from "../../Images/grid1.webp";
+import Grid2 from "../../Images/grid2.webp";
+import Grid3 from "../../Images/grid3.webp";
+import Grid4 from "../../Images/grid4.webp";
+import Grid5 from "../../Images/grid5.webp";
+import Grid6 from "../../Images/grid6.webp";
 import "./AboutUsGrid.scss";
 
 const AboutUsGrid = () => {
