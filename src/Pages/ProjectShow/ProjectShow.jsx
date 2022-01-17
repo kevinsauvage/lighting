@@ -1,8 +1,11 @@
 import "./ProjectShow.scss";
-import ProjectShowImg from "../../Images/projectShow.png";
+import ProjectShowImg from "../../Images/projectShow.webp";
+import ProjectShowImg_mobile from "../../Images/projectshow_mobile.webp";
 import Container from "../../Layout/Container/Container";
 import project2Img from "../../Images/project2.webp";
+import project2Img_mobile from "../../Images/project2_mobile.webp";
 import project1Img from "../../Images/project1.webp";
+import project1Img__mobile from "../../Images/project1_mobile.webp";
 import { useEffect } from "react";
 import Section from "../../Layout/Section/Section";
 
@@ -30,10 +33,19 @@ const ProjectShow = () => {
           </p>
         </Container>
       </Section>
-      <img src={ProjectShowImg} alt="working process" className="ProjectShow__bannerImg" />
+      <picture>
+        <source media="(max-width: 599px)" srcset={ProjectShowImg_mobile} />
+        <img src={ProjectShowImg} alt="working process" className="ProjectShow__bannerImg" />
+      </picture>
       <Container className="ProjectShow__imgs">
-        <img src={project1Img} alt="project 1" className="ProjectShow__imgs-1" />
-        <img src={project2Img} alt="project 2" className="ProjectShow__imgs-2" />
+        <picture>
+          <source media="(max-width: 599px)" srcset={project1Img__mobile} />
+          <img src={project1Img} alt="project 1" className="ProjectShow__imgs-1" />
+        </picture>
+        <picture>
+          <source media="(max-width: 599px)" srcset={project2Img_mobile} />
+          <img src={project2Img} alt="project 2" className="ProjectShow__imgs-2" />
+        </picture>
       </Container>
     </div>
   );
