@@ -1,5 +1,6 @@
 import "./BannerHome.scss";
 import MainImg from "../../../Images/main_pic.webp";
+import MainImg_mobile from "../../../Images/main_pic_mobile.webp";
 import Section from "../../../Layout/Section/Section";
 
 const BannerHome = () => {
@@ -15,7 +16,10 @@ const BannerHome = () => {
         out their honest stories, positively shifting life patterns of their clients.
       </h2>
       <div className="BannerHome__img">
-        <img src={MainImg} alt="main" width="1600" height="773" />
+        <picture>
+          <source media="(max-width: 599px)" srcset={MainImg_mobile} />
+          <img src={MainImg} alt="main" width="1600" height="773" />
+        </picture>
       </div>
     </Section>
   );
