@@ -45,16 +45,15 @@
     top: 40px;
     width: 200px;
     text-align: end;
+    span {
+      position: relative;
+      top: 20px;
+    }
 
     @include respond(mobile) {
       position: static;
       text-align: start;
       margin-bottom: 100px;
-
-      span {
-        position: relative;
-        top: 20px;
-      }
     }
   }
 
