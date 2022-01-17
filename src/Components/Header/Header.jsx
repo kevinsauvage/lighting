@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Container from "../../Layout/Container/Container";
 import "./Header.scss";
 import Logo from "../../Images/logo.png";
@@ -13,14 +13,35 @@ const Header = () => {
         </div>
         <nav className="Header__nav">
           <ul className="Header__nav-list">
-            <li className="Header__nav-item">
-              <Link to="/projects">PROJECTS</Link>
+            <li>
+              <NavLink
+                to="/projects"
+                end
+                className={(isActive) =>
+                  `Header__nav-item ${isActive.isActive ? "Header__nav-item--active" : ""}`
+                }>
+                PROJECTS
+              </NavLink>
             </li>
-            <li className="Header__nav-item">
-              <Link to="/about">ABOUT</Link>
+            <li>
+              <NavLink
+                to="/about"
+                end
+                className={(isActive) =>
+                  `Header__nav-item ${isActive.isActive ? "Header__nav-item--active" : ""}`
+                }>
+                ABOUT
+              </NavLink>
             </li>
-            <li className="Header__nav-item">
-              <Link to="/contact">CONTACT</Link>
+            <li>
+              <NavLink
+                to="/contact"
+                end
+                className={(isActive) =>
+                  `Header__nav-item ${isActive.isActive ? "Header__nav-item--active" : ""}`
+                }>
+                CONTACT
+              </NavLink>
             </li>
           </ul>
         </nav>

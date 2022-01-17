@@ -29,13 +29,20 @@
       list-style: none;
       display: flex;
       align-items: center;
+      li {
+        margin-right: 6px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
 
     &-item {
       @include btn;
 
-      &:last-child {
-        margin-right: 0;
+      &--active {
+        background-color: $yellow_main;
+        color: $black_main;
       }
     }
   }
