@@ -17,7 +17,7 @@ const BannerHome = () => {
       </h2>
       <div className="BannerHome__img">
         <picture>
-          <source media="(max-width: 599px)" srcset={MainImg_mobile} />
+          <source media="(max-width: 599px)" srcSet={MainImg_mobile} />
           <img src={MainImg} alt="main" width="1600" height="773" />
         </picture>
       </div>

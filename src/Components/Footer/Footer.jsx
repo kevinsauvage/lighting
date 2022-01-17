@@ -12,8 +12,10 @@ const Footer = () => {
         <div className="Footer__main">
           <ul className="Footer__list">
             <p className="Footer__subtitle">Socials</p>
-            {socials.map((item) => (
-              <li className="Footer__list-item">{item}</li>
+            {socials.map((item, i) => (
+              <li key={i} className="Footer__list-item">
+                {item}
+              </li>
             ))}
           </ul>
           <div>

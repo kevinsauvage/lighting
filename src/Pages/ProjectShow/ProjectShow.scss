@@ -7,8 +7,8 @@
   &__bannerImg {
     width: 100%;
     height: auto;
+    display: block;
     margin-bottom: 120px;
-
     @include respond(tablet) {
       margin-bottom: 90px;
     }
@@ -90,6 +90,7 @@
     img {
       width: 100%;
       height: auto;
+      display: block;
     }
   }
 }

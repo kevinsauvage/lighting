@@ -23,8 +23,10 @@ const Contact = () => {
         <Section className="Contact__info">
           <ul className="Contact__info-socials">
             <p className="Contact__info-title">Socials</p>
-            {socials.map((item) => (
-              <li className="Contact__info-item">{item}</li>
+            {socials.map((item, i) => (
+              <li key={i} className="Contact__info-item">
+                {item}
+              </li>
             ))}
           </ul>
           <div className="Contact__info-location">

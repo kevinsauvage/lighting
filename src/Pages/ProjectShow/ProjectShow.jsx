@@ -34,17 +34,23 @@ const ProjectShow = () => {
         </Container>
       </Section>
       <picture>
-        <source media="(max-width: 599px)" srcset={ProjectShowImg_mobile} />
-        <img src={ProjectShowImg} alt="working process" className="ProjectShow__bannerImg" />
+        <source media="(max-width: 599px)" srcSet={ProjectShowImg_mobile} />
+        <img
+          src={ProjectShowImg}
+          alt="working process"
+          className="ProjectShow__bannerImg"
+          width="439"
+          height="206"
+        />
       </picture>
       <Container className="ProjectShow__imgs">
         <picture>
-          <source media="(max-width: 599px)" srcset={project1Img__mobile} />
-          <img src={project1Img} alt="project 1" className="ProjectShow__imgs-1" />
+          <source media="(max-width: 599px)" srcSet={project1Img__mobile} />
+          <img src={project1Img} alt="project 1" className="ProjectShow__imgs-1" width="1157" height="671" />
         </picture>
         <picture>
-          <source media="(max-width: 599px)" srcset={project2Img_mobile} />
-          <img src={project2Img} alt="project 2" className="ProjectShow__imgs-2" />
+          <source media="(max-width: 599px)" srcSet={project2Img_mobile} />
+          <img src={project2Img} alt="project 2" className="ProjectShow__imgs-2" width="1157" height="3000" />
         </picture>
       </Container>
     </div>
