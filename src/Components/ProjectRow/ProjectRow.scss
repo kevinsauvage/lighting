@@ -4,25 +4,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
+
+  @include respond(tabletS) {
+    margin-bottom: 20px;
+  }
 
   @include respond(mobile) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   &__title {
     font-style: normal;
     font-weight: normal;
     font-size: 70px;
+    @include respond(tablet) {
+      font-size: 60px;
+    }
 
-    &::first-line {
-      line-height: 90px;
+    @include respond(tabletS) {
+      font-size: 45px;
     }
 
     @include respond(mobile) {
       font-size: 30px;
-      &::first-line {
-        line-height: 30px;
-      }
     }
   }
   &__subtitle {

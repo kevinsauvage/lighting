@@ -15,6 +15,7 @@
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 4px;
+    transition: all 0.2s ease-in;
 
     @include respond(mobile) {
       font-size: 20px;
@@ -24,6 +25,7 @@
     &--active {
       background-color: $yellow_main;
       color: $black_main;
+      font-weight: 700;
     }
   }
 }

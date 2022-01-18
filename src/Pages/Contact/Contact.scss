@@ -89,6 +89,9 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
+      &:hover {
+        @include btnAnim;
+      }
 
       @include respond(mobile) {
         margin-top: 80px;
