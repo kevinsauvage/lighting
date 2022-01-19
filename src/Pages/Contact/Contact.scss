@@ -5,7 +5,7 @@
   &__container {
     @include paddingLeftBig;
     @include respond(mobile) {
-      @include paddingLeftSmall;
+      padding-left: 10px;
     }
   }
 
