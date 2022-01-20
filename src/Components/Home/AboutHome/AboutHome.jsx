@@ -1,11 +1,12 @@
 import Section from "../../../Layout/Section/Section";
 import AboutUsGrid from "../../AboutUsGrid/AboutUsGrid";
 import "./AboutHome.scss";
+import Title from "../../Title/Title";
 
 const AboutHome = () => {
   return (
     <Section className="AboutHome">
-      <h3 className="AboutHome__title">ABOUT US</h3>
+      <Title className="AboutHome__title">ABOUT US</Title>
       <h4 className="AboutHome__subtitle">
         The collective of creatives and managers committed to re-thinking your business in a radically better
         way.
