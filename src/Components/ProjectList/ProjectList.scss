@@ -3,6 +3,7 @@
 .ProjectList {
   &__banner {
     @include paddingLeftSmall;
+    padding-top: 60px;
     @include respond(mobile) {
       margin-bottom: 100px;
     }
@@ -18,7 +19,6 @@
         padding-left: 80px;
       }
     }
-    @include bigTitle;
   }
 
   &__titleWrapper {
@@ -33,6 +33,7 @@
     margin-left: 1rem;
     position: relative;
     top: 12px;
+
     @include respond(tablet) {
       top: 20px;
       max-width: 200px;

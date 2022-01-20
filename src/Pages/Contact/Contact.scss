@@ -29,10 +29,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @include respond(mobile) {
-      grid-template-columns: 1fr;
-    }
-
     &-item {
       font-size: 20px;
       text-decoration: underline;
@@ -40,10 +36,6 @@
 
     &-location {
       max-width: 160px;
-
-      @include respond(mobile) {
-        margin-top: 40px;
-      }
     }
 
     &-title {

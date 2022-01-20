@@ -11,6 +11,7 @@ import project1Img_mobile from "../../Images/project1_mobile.webp";
 import project1Img_tablet from "../../Images/project1_tablet.webp";
 import { useEffect } from "react";
 import Section from "../../Layout/Section/Section";
+import Title from "../../Components/Title/Title";
 
 const ProjectShow = () => {
   useEffect(() => {
@@ -21,7 +22,7 @@ const ProjectShow = () => {
     <div className="ProjectShow">
       <Section className="ProjectShow__details">
         <Container className="ProjectShow__container">
-          <h1 className="ProjectShow__title">Gavvity</h1>
+          <Title className="ProjectShow__title">Gavvity</Title>
           <p className="ProjectShow__type">
             Branding, Typography, UX Wire-framing, UI Designs, <span>2020</span>
           </p>

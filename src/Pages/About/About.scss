@@ -30,6 +30,15 @@
     max-width: 160px;
     margin-left: 1rem;
     margin-bottom: 3.5rem;
+    @include respond(tablet) {
+      position: relative;
+      top: 20px;
+    }
+    @include respond(mobile) {
+      position: relative;
+      top: 0px;
+      left: 80px;
+    }
   }
 
   &__desc {
@@ -37,6 +46,7 @@
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 100px;
+    @include margingLeftSmall;
   }
 
   &__wrapper {
