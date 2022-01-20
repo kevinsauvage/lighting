@@ -20,17 +20,10 @@
   }
 
   &__title {
-    font-weight: 400;
-    line-height: 110px;
     margin-top: 80px;
     margin-bottom: 40px;
     white-space: pre-line;
     width: min-content;
-    @include bigTitle;
-
-    @include respond(mobile) {
-      line-height: unset;
-    }
   }
 
   &__subtitle {
@@ -53,7 +46,8 @@
     max-width: 700px;
 
     @include respond(mobile) {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 20px;
     }
   }
 
@@ -91,6 +85,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 100px;
+    justify-items: center;
 
     @include respond(mobile) {
       grid-template-columns: 1fr;
@@ -105,6 +100,12 @@
       height: auto;
       mix-blend-mode: lighten;
       position: relative;
+      &:nth-child(1) {
+        @include respond(mobile) {
+          top: 0;
+          left: -30px;
+        }
+      }
 
       &:nth-child(2) {
         top: 60px;
@@ -112,7 +113,7 @@
 
         @include respond(mobile) {
           top: 0;
-          right: 20px;
+          left: 30px;
         }
       }
 
@@ -121,7 +122,7 @@
         top: 60px;
 
         @include respond(mobile) {
-          right: -30px;
+          left: -30px;
           top: unset;
         }
       }
@@ -131,8 +132,10 @@
         top: 120px;
 
         @include respond(mobile) {
-          position: static;
           top: unset;
+          right: unset;
+          right: -30px;
+          top: 0px;
         }
       }
     }

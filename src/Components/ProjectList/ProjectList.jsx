@@ -2,6 +2,7 @@ import Container from "../../Layout/Container/Container";
 import Section from "../../Layout/Section/Section";
 import ProjectFilters from "../ProjectFilters/ProjectFilters";
 import ProjectRow from "../ProjectRow/ProjectRow";
+import Title from "../Title/Title";
 import "./ProjectList.scss";
 
 const ProjectList = () => {
@@ -19,9 +20,9 @@ const ProjectList = () => {
   return (
     <Container className="ProjectList">
       <Section className="ProjectList__banner">
-        <h1 className="ProjectList__title">FEATURED</h1>
+        <Title className="ProjectList__title ProjectList__title-1">FEATURED</Title>
         <div className="ProjectList__titleWrapper">
-          <h2 className="ProjectList__title">WORKS</h2>
+          <Title className="ProjectList__title">WORKS</Title>
           <p className="ProjectList__subtitle">
             The best from web design, app design, graphic design & branding
           </p>

@@ -6,13 +6,14 @@ import Persona2 from "../../Images/Persona2.webp";
 import Persona3 from "../../Images/Persona3.webp";
 import Persona4 from "../../Images/Persona4.webp";
 import Section from "../../Layout/Section/Section";
+import Title from "../../Components/Title/Title";
 
 const About = () => {
   return (
     <div className="About">
       <Container className="About__container">
         <div className="About__banner">
-          <h1 className="About__title">Hey, we're Ligthining</h1>
+          <Title className="About__title">Hey, we're Ligthining</Title>
           <p className="About__subtitle">Collective of professional sweethearts creating love for money</p>
         </div>
         <h2 className="About__desc">

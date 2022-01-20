@@ -1,12 +1,6 @@
 @import "../../Styles/mixins";
 
 .ProjectList {
-  h1 {
-    @include paddingLeftSmall;
-    @include respond(mobile) {
-      padding-left: 80px;
-    }
-  }
   &__banner {
     @include paddingLeftSmall;
     @include respond(mobile) {
@@ -15,6 +9,15 @@
   }
 
   &__title {
+    &-1 {
+      @include paddingLeftSmall;
+      line-height: 0px;
+      position: relative;
+      bottom: -60px;
+      @include respond(mobile) {
+        padding-left: 80px;
+      }
+    }
     @include bigTitle;
   }
 
@@ -28,9 +31,14 @@
     font-size: 25px;
     font-weight: 300;
     margin-left: 1rem;
+    position: relative;
+    top: 12px;
+    @include respond(tablet) {
+      top: 20px;
+      max-width: 200px;
+    }
     @include respond(mobile) {
       font-size: 20px;
-      position: relative;
       top: 22px;
       max-width: 200px;
     }

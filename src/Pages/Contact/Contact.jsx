@@ -3,6 +3,7 @@ import useForm from "../../Hooks/useForm";
 import "./Contact.scss";
 import Container from "../../Layout/Container/Container";
 import Section from "../../Layout/Section/Section";
+import Title from "../../Components/Title/Title";
 
 const Contact = () => {
   const socials = ["Facebook", "Behance", "Dribbble", "LinkedIn"];
@@ -18,7 +19,7 @@ const Contact = () => {
   return (
     <div className="Contact">
       <Container className={"Contact__container"}>
-        <h1 className="Contact__title">KILLING OFF THE ORDINARY</h1>
+        <Title className="Contact__title">KILLING OFF THE ORDINARY</Title>
         <p className="Contact__email">INFO@LIGHTNING.COM</p>
         <Section className="Contact__info">
           <ul className="Contact__info-socials">
