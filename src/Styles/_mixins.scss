@@ -47,37 +47,27 @@
 }
 
 @mixin btnAnim {
-  background: radial-gradient(circle at center, rgba(34, 34, 34, 0) 0%, #3f3f3f 0%, #3f3f3f 100%);
-  background-size: 100%;
-  animation: gradient 1s linear;
+  background: radial-gradient(
+    circle at center,
+    $black_main,
+    lighten($black_main, 5%),
+    lighten($black_main, 10%)
+  );
+  background-size: 600%;
+  animation: gradient 6s linear infinite;
 }
 
 @keyframes gradient {
   0% {
-    background: radial-gradient(circle at center, rgba(255, 125, 125, 0) 0%, #3f3f3f 0%, #3f3f3f 100%);
+    background-position: 0% 50%;
   }
-  10% {
-    background: radial-gradient(circle at center, rgba(255, 125, 125, 0) 10%, #3f3f3f 10%, #3f3f3f 100%);
-  }
-  25% {
-    background: radial-gradient(circle at center, rgba(44, 44, 44, 0.3) 25%, #3f3f3f 25%, #3f3f3f 100%);
-  }
-  30% {
-    background: radial-gradient(circle at center, rgba(44, 44, 44, 0.3) 25%, #3f3f3f 25%, #3f3f3f 100%);
-  }
+
   50% {
-    background: radial-gradient(circle at center, rgba(20, 20, 20, 0.5) 50%, #3f3f3f 50%, #3f3f3f 100%);
+    background-position: 100% 50%;
   }
-  75% {
-    background: radial-gradient(circle at center, rgba(65, 65, 65, 0.8) 75%, #3f3f3f 75%, #3f3f3f 100%);
-  }
+
   100% {
-    background: radial-gradient(
-      circle at center,
-      rgb(43, 43, 43) 99%,
-      rgb(37, 37, 37) 100%,
-      rgb(26, 26, 26) 100%
-    );
+    background-position: 0% 50%;
   }
 }
 
