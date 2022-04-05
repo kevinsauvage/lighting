@@ -1,7 +1,7 @@
 # LIGHTING
 
 
-## Home page
+> **Home page**
 
 ![Lighting (2)](https://user-images.githubusercontent.com/64160579/161819368-b55a7d0a-8f6a-4d5f-93b0-73084248a3de.png)
 
